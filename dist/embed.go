@@ -10,8 +10,7 @@ import (
 var embeddedFiles embed.FS
 
 func New() http.FileSystem {
-	// Use fs.Sub to get to the "files" subdir
-	fsys, err := fs.Sub(embeddedFiles, "files")
+	fsys, err := fs.Sub(embeddedFiles, "files/manager")
 	if err != nil {
 		panic(err)
 	}
