@@ -1,7 +1,7 @@
 <template>
     <div style="text-align: center;">
         <el-card shadow="always" class="box-card">
-            <p class="header-text">Cardinal</p>
+            <p class="header-text">Attack & Defense</p>
             <el-form :model="inputForm" ref="inputForm" :rules="rules" status-icon label-width="80px">
                 <el-form-item :label="$t('login.account')" prop="username">
                     <el-input type="text" v-model="inputForm.Name" autocomplete="off"></el-input>
